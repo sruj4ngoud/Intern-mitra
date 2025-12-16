@@ -1,0 +1,97 @@
+{
+  "sectors": [
+    "Technology",
+    "Finance",
+    "Healthcare",
+    "Agriculture",
+    "Marketing",
+    "Manufacturing",
+    "Education"
+  ],
+  "sector_skills": {
+    "Technology": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "SQL",
+      "Machine Learning",
+      "Data Analysis",
+      "API Development",
+      "Git"
+    ],
+    "Finance": [
+      "Excel",
+      "Financial Analysis",
+      "Accounting",
+      "SQL",
+      "Risk Management",
+      "Investment Analysis",
+      "Banking Operations",
+      "Taxation",
+      "Financial Modeling",
+      "Portfolio Management"
+    ],
+    "Healthcare": [
+      "Medical Knowledge",
+      "Patient Care",
+      "Data Entry",
+      "Research",
+      "Laboratory Skills",
+      "Healthcare Analytics",
+      "Medical Coding",
+      "Hospital Management",
+      "Electronic Health Records",
+      "HIPAA"
+    ],
+    "Agriculture": [
+      "Crop Management",
+      "Soil Analysis",
+      "Agricultural Technology",
+      "Data Collection",
+      "Field Research",
+      "Organic Farming",
+      "Precision Agriculture",
+      "Irrigation Systems",
+      "Pest Management",
+      "Agricultural Economics"
+    ],
+    "Marketing": [
+      "Digital Marketing",
+      "Content Writing",
+      "Social Media Marketing",
+      "Market Research",
+      "Brand Management",
+      "SEO",
+      "Analytics",
+      "Google Ads",
+      "Facebook Advertising",
+      "Email Marketing"
+    ],
+    "Manufacturing": [
+      "Quality Control",
+      "Production Planning",
+      "Lean Manufacturing",
+      "Safety Protocols",
+      "Process Improvement",
+      "Supply Chain",
+      "Six Sigma",
+      "Kaizen",
+      "Industrial Engineering",
+      "Manufacturing Execution Systems"
+    ],
+    "Education": [
+      "Teaching",
+      "Curriculum Development",
+      "Educational Technology",
+      "Content Creation",
+      "Student Assessment",
+      "Classroom Management",
+      "E-learning Platforms",
+      "Learning Management Systems",
+      "Educational Research",
+      "Training Design"
+    ]
+  }
+}

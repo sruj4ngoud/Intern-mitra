@@ -1,0 +1,31 @@
+# Backend Python Requirements
+# File: backend/requirements.txt
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Machine Learning & Data Processing
+scikit-learn==1.3.2
+pandas==2.1.4
+numpy==1.24.4
+
+# Data Validation & Serialization
+pydantic==2.5.0
+
+# HTTP & File Handling
+python-multipart==0.0.6
+aiofiles==23.2.1
+
+# Optional: For enhanced performance
+python-jose[cryptography]==3.3.0
+
+# Development Dependencies (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Production Dependencies (optional)
+gunicorn==21.2.0
+
+# System Dependencies
+typing-extensions==4.8.0

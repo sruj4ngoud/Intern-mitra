@@ -1,0 +1,362 @@
+PM Internship Recommendation Engine - Research Summary
+Date: 2025-09-19
+
+====================================================
+1) Project Purpose and Scope
+====================================================
+- Goal: Provide AI-powered, personalized internship recommendations aligned to the PM Internship Scheme.
+- Users: Students (primary), administrators/mentors (secondary), SIH 2025 jury (stakeholders).
+- Value: Accurate, explainable, fast recommendations using modern ML/NLP with minimal infra.
+
+====================================================
+2) Technology Stack Overview
+====================================================
+- Languages: Python 3.x, JavaScript (React), JSON
+- Frontend: React 18, React Router v6, Tailwind CSS, Axios
+- Backend: FastAPI, Pydantic, scikit-learn, pandas, NumPy, Uvicorn (ASGI)
+- Data: JSON datasets (internships_dataset.json, skills_taxonomy.json, sectors_mapping.json)
+- Tooling: Windows batch scripts (setup/run), Node.js/npm for frontend
+
+====================================================
+3) Files and Roles (Key Modules)
+====================================================
+Backend (backend/app/)
+- main.py: FastAPI app; routes (/health, /docs, /recommendations); wires request->engine.
+- models.py: Pydantic schemas for request/response validation.
+- recommendation_engine.py: TF-IDF + cosine similarity + rule-based scoring; explanations.
+- data_processor.py: Data loading, cleaning, normalization, taxonomy mapping.
+
+Backend Data (backend/data/)
+- internships_dataset.json: Corpus of internships with skills, sector, location, etc.
+- skills_taxonomy.json: Canonical list of skills and categories.
+- sectors_mapping.json: Sector-to-skills mapping for boosts/filters.
+
+Frontend (frontend/src/)
+- App.jsx: Application shell, routing, app-level state (isLoading, recommendations, searchQuery).
+- pages/Home.jsx: Input form collection; triggers recommendation API.
+- pages/Results.jsx: Displays ranked recommendations.
+- components/: UI building blocks (SearchForm, RecommendationsList, InternshipCard, LoadingSpinner, GovHeader).
+- utils/api.js: Axios client for backend calls; constants.js for configuration.
+
+Scripts
+- script.py: Project structure scaffolding.
+- script_1.py & script_3.py: Synthetic dataset generators (sectors, skills, locations, companies).
+- script_2.py: Executes backend data processor; outputs dataset and stats.
+- script_4.py: Writes complete dataset + skills taxonomy + sector mapping JSONs.
+- scripts/*.bat: Windows helpers to start backend/frontend and setup.
+
+====================================================
+4) End-to-End Data Flow (Student -> Recommendations -> UI)
+====================================================
+- Student fills form (education, skills, sectors, location) in frontend (Home.jsx).
+- Frontend sends POST /recommendations via utils/api.js (Axios).
+- Backend main.py validates input (models.py) then calls recommendation_engine.get_recommendations().
+- recommendation_engine.py loads data (via data_processor), builds profile text, TF-IDF vectorizes,
+  computes cosine similarity, applies rule-based filters/boosts (education/sector/location/skills),
+  aggregates scores, ranks top_k, and constructs explanations.
+- Backend returns JSON { recommendations: [...], meta: {...} }.
+- Frontend updates state, navigates to Results.jsx, renders cards with explanations and apply URLs.
+
+====================================================
+5) AI/NLP Techniques and Scoring
+====================================================
+- TF-IDF Vectorization (scikit-learn): featureization of skills+description per internship and user profile.
+- Cosine Similarity: measures closeness between profile vector and each internship vector.
+- Rule-based Layer: hard filters (education eligibility, sector), soft boosts (location proximity, skill overlap).
+- Score: final = 0.70*cosine + 0.20*skill_overlap + 0.10*location_boost (tunable).
+- Thresholds: min_similarity_threshold ~ 0.20–0.30 (default 0.22); top_k 10–20.
+- Explanations: matched skills intersection + notes on sector/education/location matches.
+
+====================================================
+6) ASCII Architecture & Flowcharts
+====================================================
+A) High-level System
+--------------------
+[ User ] -> [ React Frontend ] -> (Axios) -> [ FastAPI Backend ] -> [ Recommendation Engine ]
+           <-           JSON Recommendations             <-         [ JSON Data Files ]
+
+B) Frontend Flow
+----------------
+Home.jsx --submit--> api.js POST /recommendations -->> Backend
+   |                              ^
+   v                              |
+setIsLoading(true)                |
+   |                              |
+   v                              |
+Results.jsx <- setRecommendations <- JSON response
+
+C) Backend Request Lifecycle
+----------------------------
+POST /recommendations
+  -> main.py (Pydantic validate)
+  -> recommendation_engine.py
+     - load/preprocess
+     - TF-IDF -> cosine
+     - rule filters/boosts
+     - rank + explain
+  <- JSON response
+
+D) Model Internals
+------------------
+Profile -> normalize/map -> TF-IDF -> cosine -> rules -> aggregate -> Top-K + explain
+
+E) Data Artifacts
+-----------------
+backend/data/{internships_dataset.json, skills_taxonomy.json, sectors_mapping.json}
+
+====================================================
+7) Strengths
+====================================================
+- Accuracy vs simplicity: TF-IDF+cosine gives strong baseline with explainability.
+- Low latency: Preloaded vectorizer & cached matrices enable sub-second scoring.
+- Transparent: Matched skills and rules make decisions explainable.
+- Low infra footprint: JSON datasets; no DB required.
+- Clean separation: frontend/backend/engine/data split; maintainable codebase.
+- Accessibility & multilingual UI patterns supported.
+
+====================================================
+8) Limitations
+====================================================
+- Semantic gap: TF-IDF is lexical; may miss synonyms/semantics without embeddings.
+- Static data: JSON corpus limits scalability and freshness.
+- Rigid eligibility rules: Edge cases need nuanced handling.
+- Cold-start for new skills: Limited generalization beyond taxonomy.
+- Limited personalization: No user feedback loop or learning-to-rank.
+
+====================================================
+9) Recommendations & Roadmap
+====================================================
+Accuracy
+- Consider sentence/skill embeddings (e.g., MiniLM/BERT) with cosine; keep TF-IDF as fallback.
+- Add skill synonym expansion using taxonomy or WordNet-like mappings.
+- Explore BM25 as an alternative baseline to TF-IDF for sparse descriptions.
+
+Efficiency
+- Persist datasets in a lightweight DB (SQLite/PostgreSQL); add simple indexing.
+- Cache top queries and precompute sector centroids for fast warm starts.
+
+Productization
+- Add feedback loop (save likes/skips) and simple re-ranking.
+- Add filters (remote, stipend, duration) and constraints in API.
+- Containerize (Docker) and wire minimal CI (lint/test/build) with GitHub Actions.
+
+Explainability & UX
+- Show “Why this match” with top contributing terms and boosts applied.
+- Add confidence badges (High/Medium/Low) based on score percentiles.
+
+====================================================
+10) Code Explanations (Interfaces/Contracts)
+====================================================
+Contracts (conceptual):
+- Input StudentProfile: { education: str, skills: [str], sectors?: [str], location?: str }
+- Output Recommendation: { id, title, company, sector, score: float, matched_skills: [str],
+  location_city, location_state, stipend, duration_weeks, apply_url, explanation }
+
+Key functions (expected):
+- main.py: POST /recommendations -> validate -> get_recommendations(profile)
+- recommendation_engine.py: get_recommendations(profile) -> [Recommendation]
+- data_processor.py: load_data() -> corpus; normalize_profile() -> text; helpers for mapping
+
+====================================================
+11) Tuning Guidelines
+====================================================
+- Default threshold 0.22; adjust 0.18–0.26 based on Precision@10 vs Coverage.
+- Dynamic threshold: min(85th percentile, 0.65*max) clamped [0.15, 0.30].
+- Weights: start (0.70, 0.20, 0.10); grid-search if labeled eval set available.
+
+====================================================
+12) References (open-access preferred)
+====================================================
+- Manning, Raghavan, Schütze (2008). Introduction to Information Retrieval. https://nlp.stanford.edu/IR-book/
+- Pedregosa et al. (2011). Scikit-learn: Machine Learning in Python. JMLR. https://jmlr.org/papers/v12/pedregosa11a.html
+- Burke (2002). Hybrid Recommender Systems: Survey and Experiments.
+- Salton & Buckley (1988). Term-weighting approaches in automatic text retrieval.
+- Spärck Jones (1972). A statistical interpretation of term specificity.
+- Robertson & Zaragoza (2009). BM25 and Beyond. https://www.nowpublishers.com/article/Details/INR-019
+
+====================================================
+Appendix: One-Page ASCII (All-in-One)
+====================================================
+[User] -> [React UI] -> /recommendations -> [FastAPI] -> [Engine: TF-IDF+Cosine+Rules] -> [JSON Data]
+      <-                   JSON {recommendations}                                         <-
+
+=====================================================
+13) Technical Specifications: Weights, Scoring, and Parameters
+=====================================================
+Notation
+- N: number of internships in corpus
+- df(t): document frequency of term t
+- tf(t,d): term frequency of term t in document d
+- L2(x): L2 norm of vector x
+- prof: user profile pseudo-document
+- d: internship document
+
+TF-IDF (featureization)
+- Sublinear TF: tf'(t,d) = 1 + log(tf(t,d)) if tf(t,d) > 0 else 0
+- Smoothed IDF: idf(t) = log((N + 1) / (df(t) + 1)) + 1
+- Weight: w(t,d) = tf'(t,d) * idf(t)
+- Normalization: x_d = w(·,d) / L2(w(·,d)),  x_prof = w(·,prof) / L2(w(·,prof))
+
+Cosine similarity
+- cos(prof, d) = (x_prof · x_d) / (L2(x_prof) * L2(x_d)) = x_prof · x_d  (since both are L2-normalized)
+
+Auxiliary scores
+- Skill overlap: S_overlap = |skills_prof ∩ skills_d| / max(|skills_prof|, s_min)
+   • Default s_min = 5 (prevents division by small counts)
+- Location boost (bounded additive):
+   • same city: +0.03
+   • same state: +0.015
+   • else: +0.0
+- Sector preference (optional boost):
+   • sector_d in sectors_prof → +0.01 (small, to avoid overpowering cosine)
+
+Eligibility (hard filters)
+- Education: reject d if education_requirement_d not compatible with education_prof (unless near-match mode enabled)
+
+Final score (tunable linear blend)
+- score(d) = w1 * cos(prof, d) + w2 * S_overlap + w3 * (location_boost + sector_boost)
+- Recommended defaults:
+   • w1 = 0.70 (cosine similarity)
+   • w2 = 0.20 (skill overlap)
+   • w3 = 0.10 (contextual boosts)
+
+Thresholding and selection
+- Static threshold: min_similarity_threshold = 0.22 (good default for ~200–300 docs)
+- Dynamic threshold (adaptive):
+   • Given scores S after hard filters, define:
+      – thr_a = percentile_85(S)        (keep top 15%)
+      – thr_b = 0.65 * max(S)           (within 65% of best)
+      – threshold = clamp(min(thr_a, thr_b), 0.15, 0.30)
+- Top-K: select top_k = 15 after thresholding; tie-breakers by higher S_overlap, then stipend desc (if present)
+
+Hyperparameters (summary)
+- Vectorization: sublinear TF (log), smoothed IDF, L2 norm
+- Weights: w1=0.70, w2=0.20, w3=0.10
+- s_min: 5
+- Boosts: city=+0.03, state=+0.015, sector=+0.01
+- Threshold: static=0.22; dynamic in [0.15, 0.30]
+- Top-K: 15 (range 10–20 per product needs)
+
+=====================================================
+14) API Schemas (canonical)
+=====================================================
+StudentProfile (request)
+- education: string (e.g., "B.Tech")
+- skills: array[string] (canonicalized to taxonomy where possible)
+- sectors: array[string] (optional)
+- location: string (optional, city or state)
+
+RecommendationsResponse (response)
+- recommendations: array[Recommendation]
+- meta: object
+   • top_k: int
+   • total_considered: int
+   • filters_applied: array[string]
+   • threshold: float
+
+Recommendation
+- id: int|string
+- title: string
+- company: string
+- sector: string
+- score: float (0..1)
+- matched_skills: array[string]
+- location_city: string
+- location_state: string
+- stipend: string
+- duration_weeks: int
+- apply_url: string
+- explanation: string (brief rationale: top terms, overlaps, boosts)
+
+=====================================================
+15) Inference Algorithm (pseudocode)
+=====================================================
+function get_recommendations(profile):
+   # 1) Validate & normalize
+   P = normalize_profile(profile)                # lower-case, strip, dedupe, taxonomy map
+   doc_prof = build_profile_text(P)              # join skills + education + sectors
+
+   # 2) Vectorize
+   x_prof = tfidf.transform([doc_prof])          # L2-normalized row vector
+
+   # 3) Similarity
+   sims = cosine_similarity(x_prof, X_docs)      # shape: (1, N)
+
+   # 4) Hard filters
+   candidates = []
+   for i, d in enumerate(dataset):
+      if not eligible(P.education, d.education_requirement):
+         continue
+      candidates.append((i, sims[0, i]))
+
+   # 5) Soft boosts & overlap
+   scored = []
+   for (i, sim) in candidates:
+      d = dataset[i]
+      overlap = overlap_count(P.skills, d.skills_required)
+      S_overlap = overlap / max(len(P.skills), s_min)
+      loc_boost = city_state_boost(P.location, d.location_city, d.location_state)
+      sec_boost = 0.01 if sector_pref(P.sectors, d.sector) else 0.0
+      score = w1*sim + w2*S_overlap + w3*(loc_boost + sec_boost)
+      scored.append((i, score, overlap, sim))
+
+   # 6) Thresholding & ranking
+   thr = choose_threshold([s for (_, s, _, _) in scored])  # static or dynamic
+   kept = [(i, score, overlap, sim) for (i, score, overlap, sim) in scored if score >= thr]
+   kept.sort(key=lambda x: (x[1], x[2], x[3]), reverse=True)  # score, then overlap, then sim
+
+   # 7) Build explanations & response
+   out = []
+   for (i, score, overlap, sim) in kept[:top_k]:
+      d = dataset[i]
+      matched = sorted(list(set(P.skills) & set(d.skills_required)))
+      expl = f"Matched skills: {', '.join(matched[:5])}; cosine={sim:.2f}; boosts applied"
+      out.append(render_recommendation(d, score, matched, expl))
+
+   return { "recommendations": out, "meta": { "top_k": top_k, "total_considered": len(dataset), "threshold": thr } }
+
+=====================================================
+16) Evaluation Protocol & Metrics
+=====================================================
+Dataset & Setup
+- Construct a held-out set of 20–50 StudentProfiles with target relevant internships labeled (binary relevance sufficient).
+- Ensure sector and education coverage; include sparse-skill and rich-skill profiles.
+
+Metrics
+- Precision@K: P@10, P@15
+- Recall@K: optional if ground truth exhaustive
+- nDCG@K: graded relevance if you use 0/1, still meaningful; K=10
+- MAP: optional summary across queries
+- Latency: p50/p95 time per request (goal: <2s p95)
+
+Procedure
+- Grid-search threshold in {0.18, 0.20, 0.22, 0.24, 0.26}
+- Compare TF-IDF vs. BM25 (baseline) for sanity
+- Report mean P@10 and nDCG@10; select threshold meeting P@10 ≥ 0.80 with Coverage ≥ 10
+
+=====================================================
+17) Glossary (Technical Terms)
+=====================================================
+- TF (Term Frequency): count of term occurrences in a document; often sublinear (log) scaled.
+- IDF (Inverse Document Frequency): log-scaled inverse of document frequency; downweights ubiquitous terms.
+- TF-IDF: product of TF and IDF; emphasizes discriminative terms.
+- Cosine Similarity: cosine of angle between vectors; scale-invariant similarity in vector space model.
+- L2 Normalization: scaling vector to unit length; stabilizes cosine computation.
+- BM25: probabilistic ranking function; handles term saturation and length norm; strong baseline vs TF-IDF.
+- Precision@K: fraction of top-K results that are relevant.
+- nDCG@K: normalized Discounted Cumulative Gain at K; order-sensitive metric.
+- Learning-to-Rank: ML approaches (e.g., LambdaMART) for supervised ranking using features.
+- Embeddings: dense vector representations (e.g., BERT/MiniLM) capturing semantics beyond lexical overlap.
+
+=====================================================
+18) Example Runtime Config (JSON)
+=====================================================
+{
+   "weights": { "w1": 0.70, "w2": 0.20, "w3": 0.10 },
+   "s_min": 5,
+   "boosts": { "city": 0.03, "state": 0.015, "sector": 0.01 },
+   "threshold": { "static": 0.22, "adaptive": { "enabled": true, "min": 0.15, "max": 0.30, "percentile": 85, "maxFrac": 0.65 } },
+   "top_k": 15,
+   "vectorizer": { "tf": "log1p", "idf": "smooth", "norm": "l2" }
+}
+

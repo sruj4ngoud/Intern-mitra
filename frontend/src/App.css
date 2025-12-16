@@ -1,0 +1,48 @@
+.App {
+  min-height: 100vh;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+/* --- Government portal header styles (scoped) --- */
+.gov-portal-header { background: #ffffff; }
+.gov-topbar { background: #113355; }
+.gov-nav { background: #f5f7fb; border-bottom: 1px solid #e2e8f0; }
+.gov-nav-link { display:inline-block; padding: 0.5rem 0.75rem; color:#1f2937; border-radius: 0.375rem; }
+.gov-nav-link:hover, .gov-nav-link:focus { background:#e8eefb; outline: none; }
+.gov-nav-link.active { background:#dbeafe; color:#1d4ed8; font-weight:600; }
+.gov-cta { background:#1d4ed8; color:#fff; padding: 0.5rem 0.75rem; border-radius: 0.5rem; font-weight:600; }
+.gov-cta:hover { background:#1e40af; }
+
+/* Accessible skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: #1d4ed8;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  z-index: 1000;
+}
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

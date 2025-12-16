@@ -1,0 +1,988 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer Intern",
+    "company": "Capgemini",
+    "sector": "Technology",
+    "location_city": "Hyderabad",
+    "location_state": "Telangana",
+    "stipend": "₹27,382/month",
+    "duration_weeks": 10,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "React",
+      "SQL",
+      "Vue.js",
+      "Spring Boot"
+    ],
+    "description": "Join Capgemini's technology team to work on cutting-edge projects using React and SQL. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-04",
+    "start_date": "2025-11-22",
+    "apply_url": "https://pminternship.mca.gov.in/apply/1",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of React"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in React",
+      "Professional development in SQL",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Web Developer Intern",
+    "company": "Amazon India",
+    "sector": "Technology",
+    "location_city": "Coimbatore",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹15,861/month",
+    "duration_weeks": 10,
+    "education_requirement": "MCA",
+    "skills_required": [
+      "NumPy",
+      "MongoDB",
+      ".NET",
+      "Vue.js",
+      "Java"
+    ],
+    "description": "Join Amazon India's technology team to work on cutting-edge projects using NumPy and MongoDB. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-05",
+    "start_date": "2025-11-21",
+    "apply_url": "https://pminternship.mca.gov.in/apply/2",
+    "eligibility_criteria": [
+      "Currently pursuing MCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of NumPy"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in NumPy",
+      "Professional development in MongoDB",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Backend Developer Intern",
+    "company": "TCS",
+    "sector": "Technology",
+    "location_city": "Pune",
+    "location_state": "Maharashtra",
+    "stipend": "₹15,451/month",
+    "duration_weeks": 10,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "PHP",
+      "Data Analysis",
+      "JavaScript",
+      "CSS"
+    ],
+    "description": "Join TCS's technology team to work on cutting-edge projects using PHP and Data Analysis. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-03",
+    "start_date": "2025-11-27",
+    "apply_url": "https://pminternship.mca.gov.in/apply/3",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of PHP"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in PHP",
+      "Professional development in Data Analysis",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Backend Developer Intern",
+    "company": "Wipro",
+    "sector": "Technology",
+    "location_city": "Mumbai",
+    "location_state": "Maharashtra",
+    "stipend": "₹27,160/month",
+    "duration_weeks": 16,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "Vue.js",
+      "Flask",
+      "SQL",
+      "PHP"
+    ],
+    "description": "Join Wipro's technology team to work on cutting-edge projects using Vue.js and Flask. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-13",
+    "start_date": "2025-12-06",
+    "apply_url": "https://pminternship.mca.gov.in/apply/4",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Vue.js"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Vue.js",
+      "Professional development in Flask",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Frontend Developer Intern",
+    "company": "Microsoft India",
+    "sector": "Technology",
+    "location_city": "Pune",
+    "location_state": "Maharashtra",
+    "stipend": "₹18,183/month",
+    "duration_weeks": 16,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "Kotlin",
+      "Spring Boot",
+      "SQL"
+    ],
+    "description": "Join Microsoft India's technology team to work on cutting-edge projects using Kotlin and Spring Boot. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-13",
+    "start_date": "2025-11-10",
+    "apply_url": "https://pminternship.mca.gov.in/apply/5",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Kotlin"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Kotlin",
+      "Professional development in Spring Boot",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Web Developer Intern",
+    "company": "Tech Mahindra",
+    "sector": "Technology",
+    "location_city": "Ahmedabad",
+    "location_state": "Gujarat",
+    "stipend": "₹29,619/month",
+    "duration_weeks": 8,
+    "education_requirement": "B.E",
+    "skills_required": [
+      "C#",
+      "PHP",
+      "Django"
+    ],
+    "description": "Join Tech Mahindra's technology team to work on cutting-edge projects using C# and PHP. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-12",
+    "start_date": "2025-11-26",
+    "apply_url": "https://pminternship.mca.gov.in/apply/6",
+    "eligibility_criteria": [
+      "Currently pursuing B.E or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of C#"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in C#",
+      "Professional development in PHP",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Software Developer Intern",
+    "company": "Google India",
+    "sector": "Technology",
+    "location_city": "Delhi",
+    "location_state": "Delhi",
+    "stipend": "₹19,631/month",
+    "duration_weeks": 8,
+    "education_requirement": "B.E",
+    "skills_required": [
+      "API Development",
+      "PyTorch",
+      "React",
+      "TensorFlow",
+      "Data Analysis"
+    ],
+    "description": "Join Google India's technology team to work on cutting-edge projects using API Development and PyTorch. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-12",
+    "start_date": "2025-11-23",
+    "apply_url": "https://pminternship.mca.gov.in/apply/7",
+    "eligibility_criteria": [
+      "Currently pursuing B.E or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of API Development"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in API Development",
+      "Professional development in PyTorch",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Full Stack Developer Intern",
+    "company": "Wipro",
+    "sector": "Technology",
+    "location_city": "Pune",
+    "location_state": "Maharashtra",
+    "stipend": "₹27,513/month",
+    "duration_weeks": 16,
+    "education_requirement": "MCA",
+    "skills_required": [
+      "MongoDB",
+      "Pandas",
+      "Data Analysis"
+    ],
+    "description": "Join Wipro's technology team to work on cutting-edge projects using MongoDB and Pandas. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-06",
+    "start_date": "2025-11-14",
+    "apply_url": "https://pminternship.mca.gov.in/apply/8",
+    "eligibility_criteria": [
+      "Currently pursuing MCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of MongoDB"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in MongoDB",
+      "Professional development in Pandas",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Software Developer Intern",
+    "company": "Infosys",
+    "sector": "Technology",
+    "location_city": "Mumbai",
+    "location_state": "Maharashtra",
+    "stipend": "₹19,853/month",
+    "duration_weeks": 16,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "Scikit-learn",
+      "Docker",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "description": "Join Infosys's technology team to work on cutting-edge projects using Scikit-learn and Docker. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-08",
+    "start_date": "2025-11-18",
+    "apply_url": "https://pminternship.mca.gov.in/apply/9",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Scikit-learn"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Scikit-learn",
+      "Professional development in Docker",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Full Stack Developer Intern",
+    "company": "Flipkart",
+    "sector": "Technology",
+    "location_city": "Delhi",
+    "location_state": "Delhi",
+    "stipend": "₹12,653/month",
+    "duration_weeks": 10,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "AWS",
+      "React",
+      "C#"
+    ],
+    "description": "Join Flipkart's technology team to work on cutting-edge projects using AWS and React. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-05",
+    "start_date": "2025-11-02",
+    "apply_url": "https://pminternship.mca.gov.in/apply/10",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of AWS"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in AWS",
+      "Professional development in React",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Mobile App Developer Intern",
+    "company": "Amazon India",
+    "sector": "Technology",
+    "location_city": "Delhi",
+    "location_state": "Delhi",
+    "stipend": "₹21,889/month",
+    "duration_weeks": 16,
+    "education_requirement": "B.Tech",
+    "skills_required": [
+      "Angular",
+      "HTML",
+      "Django",
+      "Docker"
+    ],
+    "description": "Join Amazon India's technology team to work on cutting-edge projects using Angular and HTML. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-11",
+    "start_date": "2025-11-12",
+    "apply_url": "https://pminternship.mca.gov.in/apply/11",
+    "eligibility_criteria": [
+      "Currently pursuing B.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Angular"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Angular",
+      "Professional development in HTML",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Web Developer Intern",
+    "company": "Google India",
+    "sector": "Technology",
+    "location_city": "Pune",
+    "location_state": "Maharashtra",
+    "stipend": "₹16,050/month",
+    "duration_weeks": 8,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "Kotlin",
+      "Django",
+      "Flask",
+      "PyTorch"
+    ],
+    "description": "Join Google India's technology team to work on cutting-edge projects using Kotlin and Django. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-13",
+    "start_date": "2025-11-22",
+    "apply_url": "https://pminternship.mca.gov.in/apply/12",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Kotlin"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Kotlin",
+      "Professional development in Django",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Data Analyst Intern",
+    "company": "Capgemini",
+    "sector": "Technology",
+    "location_city": "Noida",
+    "location_state": "Uttar Pradesh",
+    "stipend": "₹21,270/month",
+    "duration_weeks": 12,
+    "education_requirement": "B.Tech",
+    "skills_required": [
+      "Docker",
+      "PostgreSQL",
+      "Java",
+      "PyTorch",
+      "Data Analysis"
+    ],
+    "description": "Join Capgemini's technology team to work on cutting-edge projects using Docker and PostgreSQL. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-09",
+    "start_date": "2025-11-23",
+    "apply_url": "https://pminternship.mca.gov.in/apply/13",
+    "eligibility_criteria": [
+      "Currently pursuing B.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Docker"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Docker",
+      "Professional development in PostgreSQL",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Data Analyst Intern",
+    "company": "Tech Mahindra",
+    "sector": "Technology",
+    "location_city": "Coimbatore",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹13,164/month",
+    "duration_weeks": 10,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "Ruby",
+      "Angular",
+      "React",
+      "Spring Boot"
+    ],
+    "description": "Join Tech Mahindra's technology team to work on cutting-edge projects using Ruby and Angular. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-03",
+    "start_date": "2025-11-26",
+    "apply_url": "https://pminternship.mca.gov.in/apply/14",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Ruby"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Ruby",
+      "Professional development in Angular",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "ML Engineer Intern",
+    "company": "IBM India",
+    "sector": "Technology",
+    "location_city": "Kolkata",
+    "location_state": "West Bengal",
+    "stipend": "₹27,998/month",
+    "duration_weeks": 12,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "C#",
+      "React",
+      "PyTorch",
+      "Ruby",
+      "Java"
+    ],
+    "description": "Join IBM India's technology team to work on cutting-edge projects using C# and React. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-15",
+    "start_date": "2025-11-15",
+    "apply_url": "https://pminternship.mca.gov.in/apply/15",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of C#"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in C#",
+      "Professional development in React",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Web Developer Intern",
+    "company": "Paytm",
+    "sector": "Technology",
+    "location_city": "Gurgaon",
+    "location_state": "Haryana",
+    "stipend": "₹12,421/month",
+    "duration_weeks": 8,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "Vue.js",
+      "CSS",
+      "Node.js",
+      "C#"
+    ],
+    "description": "Join Paytm's technology team to work on cutting-edge projects using Vue.js and CSS. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-10",
+    "start_date": "2025-11-09",
+    "apply_url": "https://pminternship.mca.gov.in/apply/16",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Vue.js"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Vue.js",
+      "Professional development in CSS",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Software Developer Intern",
+    "company": "Google India",
+    "sector": "Technology",
+    "location_city": "Ahmedabad",
+    "location_state": "Gujarat",
+    "stipend": "₹27,597/month",
+    "duration_weeks": 8,
+    "education_requirement": "M.Tech",
+    "skills_required": [
+      "NumPy",
+      "Flask",
+      "Vue.js",
+      "Spring Boot",
+      "Python"
+    ],
+    "description": "Join Google India's technology team to work on cutting-edge projects using NumPy and Flask. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-03",
+    "start_date": "2025-11-23",
+    "apply_url": "https://pminternship.mca.gov.in/apply/17",
+    "eligibility_criteria": [
+      "Currently pursuing M.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of NumPy"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in NumPy",
+      "Professional development in Flask",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Mobile App Developer Intern",
+    "company": "Amazon India",
+    "sector": "Technology",
+    "location_city": "Coimbatore",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹12,199/month",
+    "duration_weeks": 16,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "JavaScript",
+      "API Development",
+      "Vue.js"
+    ],
+    "description": "Join Amazon India's technology team to work on cutting-edge projects using JavaScript and API Development. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-10",
+    "start_date": "2025-11-29",
+    "apply_url": "https://pminternship.mca.gov.in/apply/18",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of JavaScript"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in JavaScript",
+      "Professional development in API Development",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "ML Engineer Intern",
+    "company": "Amazon India",
+    "sector": "Technology",
+    "location_city": "Hyderabad",
+    "location_state": "Telangana",
+    "stipend": "₹25,276/month",
+    "duration_weeks": 16,
+    "education_requirement": "B.Tech",
+    "skills_required": [
+      "HTML",
+      "PHP",
+      "Vue.js"
+    ],
+    "description": "Join Amazon India's technology team to work on cutting-edge projects using HTML and PHP. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-10",
+    "start_date": "2025-11-20",
+    "apply_url": "https://pminternship.mca.gov.in/apply/19",
+    "eligibility_criteria": [
+      "Currently pursuing B.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of HTML"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in HTML",
+      "Professional development in PHP",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Data Analyst Intern",
+    "company": "Google India",
+    "sector": "Technology",
+    "location_city": "Noida",
+    "location_state": "Uttar Pradesh",
+    "stipend": "₹15,901/month",
+    "duration_weeks": 16,
+    "education_requirement": "BSc",
+    "skills_required": [
+      "Flask",
+      "SQL",
+      "Git",
+      "Swift"
+    ],
+    "description": "Join Google India's technology team to work on cutting-edge projects using Flask and SQL. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-02",
+    "start_date": "2025-11-15",
+    "apply_url": "https://pminternship.mca.gov.in/apply/20",
+    "eligibility_criteria": [
+      "Currently pursuing BSc or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Flask"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Flask",
+      "Professional development in SQL",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Web Developer Intern",
+    "company": "TCS",
+    "sector": "Technology",
+    "location_city": "Chennai",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹16,857/month",
+    "duration_weeks": 16,
+    "education_requirement": "BCA",
+    "skills_required": [
+      "Spring Boot",
+      "API Development",
+      "Python",
+      "Data Analysis",
+      "C#"
+    ],
+    "description": "Join TCS's technology team to work on cutting-edge projects using Spring Boot and API Development. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-12",
+    "start_date": "2025-11-09",
+    "apply_url": "https://pminternship.mca.gov.in/apply/21",
+    "eligibility_criteria": [
+      "Currently pursuing BCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Spring Boot"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Spring Boot",
+      "Professional development in API Development",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Full Stack Developer Intern",
+    "company": "Google India",
+    "sector": "Technology",
+    "location_city": "Coimbatore",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹28,106/month",
+    "duration_weeks": 16,
+    "education_requirement": "B.E",
+    "skills_required": [
+      "Data Analysis",
+      "Angular",
+      "C++"
+    ],
+    "description": "Join Google India's technology team to work on cutting-edge projects using Data Analysis and Angular. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-07",
+    "start_date": "2025-12-02",
+    "apply_url": "https://pminternship.mca.gov.in/apply/22",
+    "eligibility_criteria": [
+      "Currently pursuing B.E or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Data Analysis"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Data Analysis",
+      "Professional development in Angular",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Mobile App Developer Intern",
+    "company": "Amazon India",
+    "sector": "Technology",
+    "location_city": "Delhi",
+    "location_state": "Delhi",
+    "stipend": "₹12,626/month",
+    "duration_weeks": 12,
+    "education_requirement": "BCA",
+    "skills_required": [
+      "PostgreSQL",
+      "NumPy",
+      "TensorFlow",
+      "SQL"
+    ],
+    "description": "Join Amazon India's technology team to work on cutting-edge projects using PostgreSQL and NumPy. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-06",
+    "start_date": "2025-11-07",
+    "apply_url": "https://pminternship.mca.gov.in/apply/23",
+    "eligibility_criteria": [
+      "Currently pursuing BCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of PostgreSQL"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in PostgreSQL",
+      "Professional development in NumPy",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Mobile App Developer Intern",
+    "company": "Swiggy",
+    "sector": "Technology",
+    "location_city": "Hyderabad",
+    "location_state": "Telangana",
+    "stipend": "₹14,159/month",
+    "duration_weeks": 12,
+    "education_requirement": "BCA",
+    "skills_required": [
+      "TensorFlow",
+      "Flask",
+      "Angular"
+    ],
+    "description": "Join Swiggy's technology team to work on cutting-edge projects using TensorFlow and Flask. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-10",
+    "start_date": "2025-11-21",
+    "apply_url": "https://pminternship.mca.gov.in/apply/24",
+    "eligibility_criteria": [
+      "Currently pursuing BCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of TensorFlow"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in TensorFlow",
+      "Professional development in Flask",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Web Developer Intern",
+    "company": "Cognizant",
+    "sector": "Technology",
+    "location_city": "Delhi",
+    "location_state": "Delhi",
+    "stipend": "₹14,594/month",
+    "duration_weeks": 8,
+    "education_requirement": "MCA",
+    "skills_required": [
+      "NumPy",
+      "Ruby",
+      "Vue.js"
+    ],
+    "description": "Join Cognizant's technology team to work on cutting-edge projects using NumPy and Ruby. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-03",
+    "start_date": "2025-11-10",
+    "apply_url": "https://pminternship.mca.gov.in/apply/25",
+    "eligibility_criteria": [
+      "Currently pursuing MCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of NumPy"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in NumPy",
+      "Professional development in Ruby",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "ML Engineer Intern",
+    "company": "Tech Mahindra",
+    "sector": "Technology",
+    "location_city": "Chennai",
+    "location_state": "Tamil Nadu",
+    "stipend": "₹27,615/month",
+    "duration_weeks": 16,
+    "education_requirement": "B.E",
+    "skills_required": [
+      "Spring Boot",
+      "CSS",
+      "NumPy",
+      "Django",
+      "Node.js"
+    ],
+    "description": "Join Tech Mahindra's technology team to work on cutting-edge projects using Spring Boot and CSS. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-14",
+    "start_date": "2025-11-29",
+    "apply_url": "https://pminternship.mca.gov.in/apply/26",
+    "eligibility_criteria": [
+      "Currently pursuing B.E or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Spring Boot"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Spring Boot",
+      "Professional development in CSS",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Data Analyst Intern",
+    "company": "Infosys",
+    "sector": "Technology",
+    "location_city": "Kolkata",
+    "location_state": "West Bengal",
+    "stipend": "₹17,656/month",
+    "duration_weeks": 12,
+    "education_requirement": "BCA",
+    "skills_required": [
+      "Kubernetes",
+      "HTML",
+      "CSS",
+      "PostgreSQL"
+    ],
+    "description": "Join Infosys's technology team to work on cutting-edge projects using Kubernetes and HTML. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-06",
+    "start_date": "2025-11-10",
+    "apply_url": "https://pminternship.mca.gov.in/apply/27",
+    "eligibility_criteria": [
+      "Currently pursuing BCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Kubernetes"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Kubernetes",
+      "Professional development in HTML",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Mobile App Developer Intern",
+    "company": "Wipro",
+    "sector": "Technology",
+    "location_city": "Mumbai",
+    "location_state": "Maharashtra",
+    "stipend": "₹19,304/month",
+    "duration_weeks": 8,
+    "education_requirement": "BCA",
+    "skills_required": [
+      "React",
+      "PostgreSQL",
+      "Data Analysis"
+    ],
+    "description": "Join Wipro's technology team to work on cutting-edge projects using React and PostgreSQL. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-08",
+    "start_date": "2025-11-08",
+    "apply_url": "https://pminternship.mca.gov.in/apply/28",
+    "eligibility_criteria": [
+      "Currently pursuing BCA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of React"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in React",
+      "Professional development in PostgreSQL",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Software Developer Intern",
+    "company": "Cognizant",
+    "sector": "Technology",
+    "location_city": "Noida",
+    "location_state": "Uttar Pradesh",
+    "stipend": "₹18,925/month",
+    "duration_weeks": 16,
+    "education_requirement": "B.Tech",
+    "skills_required": [
+      "Kotlin",
+      "Machine Learning",
+      "MongoDB"
+    ],
+    "description": "Join Cognizant's technology team to work on cutting-edge projects using Kotlin and Machine Learning. Develop innovative software solutions and contribute to product development.",
+    "application_deadline": "2025-10-03",
+    "start_date": "2025-11-11",
+    "apply_url": "https://pminternship.mca.gov.in/apply/29",
+    "eligibility_criteria": [
+      "Currently pursuing B.Tech or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of Kotlin"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in Kotlin",
+      "Professional development in Machine Learning",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Accounting Intern",
+    "company": "Bank of India",
+    "sector": "Finance",
+    "location_city": "Mumbai",
+    "location_state": "Maharashtra",
+    "stipend": "₹22,029/month",
+    "duration_weeks": 16,
+    "education_requirement": "MBA",
+    "skills_required": [
+      "QuickBooks",
+      "SQL",
+      "Risk Management",
+      "Investment Analysis"
+    ],
+    "description": "Support Bank of India's financial operations with expertise in QuickBooks and SQL. Gain hands-on experience in financial analysis and decision-making processes.",
+    "application_deadline": "2025-10-06",
+    "start_date": "2025-11-28",
+    "apply_url": "https://pminternship.mca.gov.in/apply/30",
+    "eligibility_criteria": [
+      "Currently pursuing MBA or equivalent degree",
+      "Minimum 60% aggregate marks in current course",
+      "Age between 18-25 years",
+      "Basic knowledge of QuickBooks"
+    ],
+    "learning_outcomes": [
+      "Hands-on experience in QuickBooks",
+      "Professional development in SQL",
+      "Industry exposure and networking opportunities",
+      "Certificate of completion from government internship scheme"
+    ]
+  }
+]
